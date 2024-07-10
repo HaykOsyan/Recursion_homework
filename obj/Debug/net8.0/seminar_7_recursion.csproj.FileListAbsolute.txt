@@ -1,0 +1,14 @@
+F:\Geek_brains\c#\seminar_7_recursion\bin\Debug\net8.0\seminar_7_recursion.exe
+F:\Geek_brains\c#\seminar_7_recursion\bin\Debug\net8.0\seminar_7_recursion.deps.json
+F:\Geek_brains\c#\seminar_7_recursion\bin\Debug\net8.0\seminar_7_recursion.runtimeconfig.json
+F:\Geek_brains\c#\seminar_7_recursion\bin\Debug\net8.0\seminar_7_recursion.dll
+F:\Geek_brains\c#\seminar_7_recursion\bin\Debug\net8.0\seminar_7_recursion.pdb
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\seminar_7_recursion.GeneratedMSBuildEditorConfig.editorconfig
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\seminar_7_recursion.AssemblyInfoInputs.cache
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\seminar_7_recursion.AssemblyInfo.cs
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\seminar_7_recursion.csproj.CoreCompileInputs.cache
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\seminar_7_recursion.dll
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\refint\seminar_7_recursion.dll
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\seminar_7_recursion.pdb
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\seminar_7_recursion.genruntimeconfig.cache
+F:\Geek_brains\c#\seminar_7_recursion\obj\Debug\net8.0\ref\seminar_7_recursion.dll

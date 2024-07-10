@@ -31,29 +31,85 @@
 
 // Задача 2: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
+// void Main()
+// {
+//     Console.WriteLine("type number m");
+//     int m = Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine("type number n");
+//     int n = Convert.ToInt32(Console.ReadLine());
+//     System.Console.WriteLine($"Akerman number for {m} and {n} is {Akerman(m, n)})");
+// }
+
+// int Akerman(int m, int n)
+// {
+//     if (m == 0)
+//     {
+//         return n + 1;
+//     }
+//     else if (m > 0 && n == 0)
+//     {
+//         return Akerman(m - 1, 1);
+//     }
+//     else
+//     {
+//         return Akerman(m - 1, Akerman(m, n - 1));
+//     }
+// }
+
+// Main();
+
+// Задача 3: Задайте произвольный массив. Выведете его элементы, начиная с конца. Использовать рекурсию, не использовать циклы.
+
 void Main()
 {
-    Console.WriteLine("type number m");
-    int m = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("type number n");
-    int n = Convert.ToInt32(Console.ReadLine());
-    System.Console.WriteLine($"Akerman number for {m} and {n} is {Akerman(m, n)})");
+    Console.WriteLine("type size of array");
+    int arraySize = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("type min for random numbers");
+    int min = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("type max for random numbers");
+    int max = Convert.ToInt32(Console.ReadLine());
+    int[] array = CreateArray(arraySize, min, max);
+    PrintArray(array);
+    System.Console.WriteLine();
+    ReverseArray(array);
 }
 
-int Akerman(int m, int n)
+Random rand = new Random();
+int randomNumber(int min, int max)
 {
-    if (m == 0)
+    return rand.Next(min, max);
+}
+
+int[] CreateArray(int arraySize, int min, int max)
+{
+    int[] array = new int[arraySize];
+    for (int i = 0; i < arraySize; i++)
     {
-        return n + 1;
+        array[i] = randomNumber(min, max);
     }
-    else if (m > 0 && n == 0)
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    int arrLength = array.Length;
+    if (arrLength < 1)
     {
-        return Akerman(m - 1, 1);
+        return;
     }
-    else
+    System.Console.Write(array[0] + " ");
+    PrintArray(array[1..]);
+}
+
+void ReverseArray(int[] array)
+{
+    int arrLength = array.Length;
+    if (arrLength < 1)
     {
-        return Akerman(m - 1, Akerman(m, n - 1));
+        return;
     }
+    System.Console.Write(array[arrLength - 1] + " ");
+    ReverseArray(array[..(arrLength - 1)]);
 }
 
 Main();
